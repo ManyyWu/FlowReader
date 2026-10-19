@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 400 400">
+  <title>FlowReader — accessibility and speech</title>
+  <circle cx="200" cy="200" r="200" fill="#149FD1"/>
+  <g fill="#FFFFFF">
+    <circle cx="200" cy="92" r="22.5"/>
+    <path d="M102 123.5 H298 C310 123.5 312 140 300 142 L246 148 C235 149 230 153 230 164 V186 C230 209 233 223 239 246 L251 308 C254 322 235 328 231 313 L208 238 C206 229 194 229 192 238 L169 313 C165 328 146 322 149 308 L161 246 C167 223 170 209 170 186 V164 C170 153 165 149 154 148 L100 142 C88 140 90 123.5 102 123.5 Z"/>
+    <path transform="translate(0 -8)" d="M270 83 Q266 83 266 87 V106 Q266 110 270 110 H282 L307 127 Q312 130 312 124 V68 Q312 62 307 65 L282 83 Z"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" transform="translate(0 -8)">
+    <path d="M323 78 C334 89 334 103 323 114"/>
+    <path d="M337 65 C355 83 355 109 337 127"/>
+  </g>
+</svg>

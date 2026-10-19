@@ -1,0 +1,127 @@
+0		0	1	true	false	android.widget.FrameLayout		[0,0][1440,3088]		
+1	0	0	1	true	false	android.widget.LinearLayout		[0,0][1440,3088]		
+2	1	0	1	true	false	android.widget.FrameLayout		[0,0][1440,3088]		
+3	2	0	1	true	false	android.widget.LinearLayout	com.reddit.frontpage:id/action_bar_root	[0,0][1440,3088]		
+4	3	0	1	true	false	android.widget.FrameLayout	android:id/content	[0,0][1440,3088]		
+5	4	0	1	true	false	android.widget.FrameLayout		[0,0][1440,3088]		
+6	5	0	1	true	false	androidx.drawerlayout.widget.DrawerLayout	com.reddit.frontpage:id/drawer_layout	[0,0][1440,3088]		
+7	6	0	1	true	false	android.widget.FrameLayout	com.reddit.frontpage:id/frame_container	[0,0][1440,3088]		
+8	7	0	1	true	false	android.view.ViewGroup	com.reddit.frontpage:id/main_activity_navhost	[0,0][1440,3088]		
+9	8	0	1	true	false	android.view.View		[0,0][1440,3088]		
+10	9	0	1	true	false	android.view.View		[0,0][1440,3088]		
+11	10	0	1	true	false	android.view.View		[0,0][1440,3088]		
+12	11	0	1	true	false	android.view.View		[0,0][1440,3088]		
+13	12	0	1	true	false	android.view.View		[0,0][1440,3088]		
+14	13	0	1	true	false	android.view.View		[0,0][1440,3088]		
+15	14	0	1	true	false	android.view.View		[0,0][1440,3088]		
+16	15	0	1	true	false	android.view.View	box_content	[0,0][1440,3088]		
+17	16	0	1	false	false	androidx.compose.ui.viewinterop.ViewFactoryHolder		[0,0][1440,3088]		
+18	17	0	3	true	false	androidx.viewpager.widget.ViewPager	com.reddit.frontpage:id/fragment_pager	[0,0][1440,3088]		
+19	18	0	1	false	false	android.view.ViewGroup		[0,0][0,3088]		
+20	19	0	1	false	false	android.view.View		[-1440,0][0,3088]		
+21	20	0	1	false	false	android.view.View		[-1440,0][0,3088]		
+19	18	1	1	true	false	android.view.ViewGroup		[0,0][1440,3088]		
+20	22	0	1	true	false	android.view.View		[0,0][1440,3088]		
+21	23	0	2	true	false	android.view.View		[0,0][1440,3088]		
+22	24	0	2	true	false	android.view.View	post_detail_scaffold	[0,0][1440,3088]		
+23	25	0	1	true	false	android.view.View	box_content	[0,321][1440,3088]		
+24	26	0	2	true	false	android.view.View		[0,321][1440,3088]		
+25	27	0	1	true	false	android.view.View	feed_lazy_column	[0,321][1440,3088]		
+26	28	0	1	true	false	android.view.View	post_detail_section	[0,321][1440,3088]		
+27	29	0	1	true	false	android.view.View	post_detail_section_column	[0,321][1440,3088]		
+28	30	0	1	true	false	android.view.View	post_section_key	[0,321][1440,3088]		
+29	31	0	1	true	false	android.view.View	post_content	[0,321][1440,3088]		
+30	32	0	1	true	false	android.view.View	post_self_content	[56,321][1384,3088]		
+31	33	0	7	true	false	android.view.View	formatted_fbp_body	[56,321][1384,3088]		
+32	34	0	0	true	false	android.widget.TextView		[56,321][531,323]	4piR77iPIOS7iuW5tOesrDEyMeasoVNwYWNlWOWPkeWwhA==	4piR77iPIOS7iuW5tOesrDEyMeasoVNwYWNlWOWPkeWwhA==
+32	34	1	0	true	false	android.widget.TextView		[56,368][538,425]	4piR77iPIOS7iuW5tOesrDUw5qyh5LuOU0xDLTQw5Y+R5bCE	4piR77iPIOS7iuW5tOesrDUw5qyh5LuOU0xDLTQw5Y+R5bCE
+32	34	2	0	true	false	android.widget.TextView		[56,470][858,527]	4piR77iPIOatpOWPkeWwhOWPsOeahOWRqOi9rOaXtumXtOS4ujXlpKnvvIwyM+Wwj+aXtjU25YiGMTbnp5I=	4piR77iPIOatpOWPkeWwhOWPsOeahOWRqOi9rOaXtumXtOS4ujXlpKnvvIwyM+Wwj+aXtjU25YiGMTbnp5I=
+32	34	3	0	true	false	android.widget.TextView		[56,572][881,629]	4piR77iPIOesrEIxMDg15qyh5Y+R5bCE5Lul5p2l55qENjjlpKnvvIwxOOWwj+aXtjMx5YiGMzTnp5I=	4piR77iPIOesrEIxMDg15qyh5Y+R5bCE5Lul5p2l55qENjjlpKnvvIwxOOWwj+aXtjMx5YiGMzTnp5I=
+32	34	4	0	true	false	android.widget.TextView		[56,674][620,731]	5pWw5o2u57uf6K6h5YyF5ousIEYx77yMRjnvvIxGSCDlkozmmJ/oiLA=	5pWw5o2u57uf6K6h5YyF5ousIEYx77yMRjnvvIxGSCDlkozmmJ/oiLA=
+32	34	5	0	true	false	android.widget.TextView		[56,804][182,868]	5pe26Ze057q/	5pe26Ze057q/
+32	34	6	36	true	false	android.view.View		[56,935][1384,3088]		6KGo
+33	41	0	0	true	false	android.widget.TextView		[56,935][718,1047]	5pe26Ze0	5pe26Ze0
+33	41	1	0	true	false	android.widget.TextView		[721,935][1383,1047]	5LqL5Lu2	5LqL5Lu2
+33	41	2	0	true	false	android.widget.TextView		[56,1050][718,1163]	LTA6Mzg6MDA=	LTA6Mzg6MDA=
+33	41	3	0	true	false	android.widget.TextView		[721,1050][1383,1163]	5YeG5aSH5o6o6L+b5YmC6KOF6L29	5YeG5aSH5o6o6L+b5YmC6KOF6L29
+33	41	4	0	true	false	android.widget.TextView		[56,1167][718,1280]	LTA6MzU6MDA=	LTA6MzU6MDA=
+33	41	5	0	true	false	android.widget.TextView		[721,1167][1383,1280]	5o6o6L+b5YmC6KOF6L29	5o6o6L+b5YmC6KOF6L29
+33	41	6	0	true	false	android.widget.TextView		[56,1283][718,1396]	LTA6MzU6MDA=	LTA6MzU6MDA=
+33	41	7	0	true	false	android.widget.TextView		[721,1283][1383,1396]	56ysMemYtuautea2suawp+ijhei9vQ==	56ysMemYtuautea2suawp+ijhei9vQ==
+33	41	8	0	true	false	android.widget.TextView		[56,1400][718,1513]	LTA6MTY6MDA=	LTA6MTY6MDA=
+33	41	9	0	true	false	android.widget.TextView		[721,1400][1383,1513]	56ysMumYtuautea2suawp+ijhei9vQ==	56ysMumYtuautea2suawp+ijhei9vQ==
+33	41	10	0	true	false	android.widget.TextView		[56,1516][718,1629]	LTA6MDc6MDA=	LTA6MDc6MDA=
+33	41	11	0	true	false	android.widget.TextView		[721,1516][1383,1629]	5Y+R5Yqo5py66aKE5Ya3	5Y+R5Yqo5py66aKE5Ya3
+33	41	12	0	true	false	android.widget.TextView		[56,1633][718,1746]	LTA6MDE6MDA=	LTA6MDE6MDA=
+33	41	13	0	true	false	android.widget.TextView		[721,1633][1383,1746]	5rK5566x5Yqg5Y6L	5rK5566x5Yqg5Y6L
+33	41	14	0	true	false	android.widget.TextView		[56,1749][718,1862]	LTA6MDE6MDA=	LTA6MDE6MDA=
+33	41	15	0	true	false	android.widget.TextView		[721,1749][1383,1862]	5ZCv5Yqo	5ZCv5Yqo
+33	41	16	0	true	false	android.widget.TextView		[56,1866][718,1979]	LTA6MDA6NDU=	LTA6MDA6NDU=
+33	41	17	0	true	false	android.widget.TextView		[721,1866][1383,1979]	5YeG5aSH5Y+R5bCE	5YeG5aSH5Y+R5bCE
+33	41	18	0	true	false	android.widget.TextView		[56,1982][718,2095]	LTA6MDA6MDM=	LTA6MDA6MDM=
+33	41	19	0	true	false	android.widget.TextView		[721,1982][1383,2095]	54K554Gr	54K554Gr
+33	41	20	0	true	false	android.widget.TextView		[56,2099][718,2212]	MDowMDowMA==	MDowMDowMA==
+33	41	21	0	true	false	android.widget.TextView		[721,2099][1383,2212]	5Y+R5bCE	5Y+R5bCE
+33	41	22	0	true	false	android.widget.TextView		[56,2215][718,2328]	MDowMTowOQ==	MDowMTowOQ==
+33	41	23	0	true	false	android.widget.TextView		[721,2215][1383,2328]	5pyA5aSn5Yqo5oCB5Y6L5Yqb	5pyA5aSn5Yqo5oCB5Y6L5Yqb
+33	41	24	0	true	false	android.widget.TextView		[56,2332][718,2434]	MDowMjoyNg==	MDowMjoyNg==
+33	41	25	0	true	false	android.widget.TextView		[721,2332][1383,2434]	TUVDTw==	TUVDTw==
+33	41	26	0	true	false	android.widget.TextView		[56,2437][718,2550]	MDowMjoyOQ==	MDowMjoyOQ==
+33	41	27	0	true	false	android.widget.TextView		[721,2437][1383,2550]	56ysMumYtuauteWIhuemuw==	56ysMumYtuauteWIhuemuw==
+33	41	28	0	true	false	android.widget.TextView		[56,2554][718,2656]	MDowMjozNw==	MDowMjozNw==
+33	41	29	0	true	false	android.widget.TextView		[721,2554][1383,2656]	U0VTLTE=	U0VTLTE=
+33	41	30	0	true	false	android.widget.TextView		[56,2659][718,2772]	MDowMzowMA==	MDowMzowMA==
+33	41	31	0	true	false	android.widget.TextView		[721,2659][1383,2772]	5YWs5beu572p5YiG56a7	5YWs5beu572p5YiG56a7
+33	41	32	0	true	false	android.widget.TextView		[56,2776][718,2889]	MDowNjozNg==	MDowNjozNg==
+33	41	33	0	true	false	android.widget.TextView		[721,2776][1383,2889]	6L+b5YWl54eD54On5ZCv5Yqo	6L+b5YWl54eD54On5ZCv5Yqo
+33	41	34	0	false	false	android.widget.TextView		[56,3060][718,3088]	MDowODoxNw==	MDowODoxNw==
+33	41	35	0	false	false	android.widget.TextView		[721,3060][1383,3088]	U0VDTy0x	U0VDTy0x
+25	27	1	0	true	false	android.view.View		[608,517][832,741]		
+23	25	1	1	true	false	android.view.View	post_detail_app_bar	[0,0][1440,321]		
+24	79	0	1	true	false	android.view.View	top_app_bar	[0,125][1440,321]		
+25	80	0	3	true	false	android.view.View	collapsed_content	[0,125][1440,321]		
+26	81	0	1	true	false	android.view.View	return_button_id	[28,153][168,293]		
+27	82	0	1	true	false	android.view.View		[28,153][168,293]		
+28	83	0	2	true	true	android.view.View		[14,139][182,307]		
+29	84	0	1	true	false	android.view.View		[14,139][182,307]		
+30	85	0	0	true	false	android.view.View		[63,188][133,258]		6L+U5Zue
+29	84	1	0	true	false	android.widget.Button		[28,153][168,293]		
+26	81	1	1	true	false	android.view.View	collapsed_title	[196,195][349,251]		
+27	88	0	1	true	true	android.view.View	title_presence_container	[189,139][357,307]		
+28	89	0	0	true	false	android.widget.TextView	title_text	[196,195][349,251]	ci9zcGFjZXg=	
+26	81	2	4	true	false	android.view.View	top_app_bar_actions	[831,153][1412,293]		
+27	91	0	1	true	false	android.view.View	action_search_comments	[831,153][964,293]		
+28	92	0	1	true	false	android.view.View		[831,153][964,293]		
+29	93	0	2	true	true	android.view.View		[817,139][964,307]		
+30	94	0	1	true	false	android.view.View		[817,139][964,307]		
+31	95	0	0	true	false	android.view.View	search_icon	[866,188][936,258]		5pCc57Si
+30	94	1	0	true	false	android.widget.Button		[831,153][971,293]		
+27	91	1	1	true	false	android.view.View	action_sort	[978,153][1111,293]		
+28	98	0	1	true	false	android.view.View		[978,153][1111,293]		
+29	99	0	2	true	true	android.view.View		[964,139][1111,307]		
+30	100	0	1	true	false	android.view.View		[964,139][1111,307]		
+31	101	0	0	true	false	android.view.View		[1013,188][1083,258]		5o6S5bqP
+30	100	1	0	true	false	android.widget.Button		[978,153][1118,293]		
+27	91	2	1	true	false	android.view.View	action_menu	[1125,153][1258,293]		
+28	104	0	1	true	false	android.view.View		[1125,153][1258,293]		
+29	105	0	2	true	true	android.view.View		[1111,139][1258,307]		
+30	106	0	1	true	false	android.view.View		[1111,139][1258,307]		
+31	107	0	0	true	false	android.view.View		[1160,188][1230,258]		5biW5a2Q6I+c5Y2V
+30	106	1	0	true	false	android.widget.Button		[1125,153][1265,293]		
+27	91	3	3	true	true	android.view.View	avatar	[1258,139][1426,307]		
+28	110	0	0	true	false	android.view.View		[1286,167][1398,279]		TE1hbnl5XyDotKbmiLc=
+28	110	1	1	true	false	android.view.View	snoovatar	[1286,167][1398,279]		
+29	112	0	1	true	false	android.view.View		[1286,167][1398,279]		
+30	113	0	1	true	false	android.view.View		[1258,139][1426,307]		
+31	114	0	1	true	false	android.view.View		[1258,139][1426,307]		
+32	115	0	0	true	false	android.view.View		[1258,139][1426,307]		
+28	110	2	0	true	false	android.widget.Button		[1286,167][1398,279]		
+22	24	1	2	true	false	android.view.View		[0,0][1440,3088]		
+23	118	0	1	true	false	android.view.View		[28,2892][1412,3060]		
+24	119	0	1	true	true	android.view.View		[28,2892][1412,3060]		
+25	120	0	0	true	false	android.widget.TextView		[175,2948][323,3004]	5Yqg5YWl5a+56K+d	
+23	118	1	1	true	false	android.view.View		[1230,2682][1398,2850]		
+24	122	0	0	true	true	android.widget.Button		[1230,2682][1398,2850]		5LiL5LiA5p2h6K+E6K66
+19	18	2	1	false	false	android.view.ViewGroup		[1440,0][1440,3088]		
+20	124	0	1	false	false	android.view.View		[1440,0][2880,3088]		
+21	125	0	1	false	false	android.view.View		[1440,0][2880,3088]		

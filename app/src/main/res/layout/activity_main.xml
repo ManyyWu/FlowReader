@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:fitsSystemWindows="true" android:scrollbars="vertical" android:fadeScrollbars="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="FlowReader 设置" android:textSize="28sp" android:textStyle="bold" />
+        <LinearLayout style="@style/SettingsGroup">
+            <TextView style="@style/SettingsGroupTitle" android:text="无障碍与悬浮球" />
+            <TextView android:id="@+id/service_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textSize="16sp" />
+            <Button android:id="@+id/open_accessibility_settings" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="无障碍设置" />
+            <TextView style="@style/SettingsHelp" android:text="无障碍服务用于读取页面文字，开启悬浮球后，仅在 X、Reddit、Telegram 中自动显示，离开后自动隐藏并停止播放或滚动。" />
+            <Switch android:id="@+id/show_overlay" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="启用悬浮球（适配应用内自动显示）" android:textSize="18sp" />
+            <Switch android:id="@+id/overlay_auto_hide" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="悬浮球自动隐藏（闲置3秒）" android:textSize="18sp" />
+            <TextView android:id="@+id/overlay_transparency_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="悬浮球整体透明度：0%" />
+            <SeekBar android:id="@+id/overlay_transparency" android:layout_width="match_parent" android:layout_height="48dp" android:max="100" android:contentDescription="悬浮球整体透明度，0%不透明，100%完全透明" />
+            <Button android:id="@+id/overlay_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="悬浮球与图标颜色" />
+            <TextView style="@style/SettingsHelp" android:text="单击展开图标，双击播放/暂停；拖动后吸边，闲置3秒自动缩为侧边圆角条。文本小窗左下角可调整大小。" />
+        </LinearLayout>
+        <LinearLayout style="@style/SettingsGroup">
+            <TextView style="@style/SettingsGroupTitle" android:text="朗读设置" />
+            <TextView android:id="@+id/speech_rate_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textSize="18sp" />
+            <SeekBar android:id="@+id/speech_rate" android:layout_width="match_parent" android:layout_height="48dp" android:max="25" android:contentDescription="语速调节，0.5至3倍" />
+            <Switch android:id="@+id/auto_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="自动续读" android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout style="@style/SettingsGroup">
+            <TextView style="@style/SettingsGroupTitle" android:text="纯滚屏（小窗启动，不播放语音）" />
+            <TextView android:id="@+id/scroll_interval_label" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <NumberPicker android:id="@+id/scroll_interval" android:layout_width="260dp" android:layout_height="160dp" android:layout_gravity="center_horizontal" android:descendantFocusability="blocksDescendants" android:contentDescription="相邻滚动开始的间隔，100毫秒至60秒，步进100毫秒" />
+            <TextView android:id="@+id/scroll_percent_label" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <SeekBar android:id="@+id/scroll_percent" android:layout_width="match_parent" android:layout_height="48dp" android:max="90" android:contentDescription="每次滚动屏幕高度的10%至100%" />
+            <Switch android:id="@+id/continuous_scroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="连续滚屏（按速度平滑滚动）" android:textSize="18sp" />
+            <TextView android:id="@+id/scroll_speed_label" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <NumberPicker android:id="@+id/scroll_speed" android:layout_width="260dp" android:layout_height="160dp" android:layout_gravity="center_horizontal" android:descendantFocusability="blocksDescendants" android:contentDescription="连续滚屏速度，每秒屏幕高度百分比" />
+        </LinearLayout>
+        <LinearLayout style="@style/SettingsGroup">
+            <TextView style="@style/SettingsGroupTitle" android:text="在线语音" />
+            <Switch android:id="@+id/use_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="使用 Edge 在线语音" android:textSize="18sp" />
+            <Button android:id="@+id/prefetch_depth" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="语音预加载：提前1段" />
+            <TextView style="@style/SettingsHelp" android:text="仅用于 Edge；修改后下次播放生效。音频缓存总上限16MB。开启后将朗读文本发送到所填语音接口合成；关闭使用手机系统 TTS。" />
+            <TextView style="@style/SettingsHelp" android:text="语音接口" />
+            <EditText android:id="@+id/edge_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri" android:singleLine="true" android:hint="wss://…" android:textSize="14sp" />
+            <TextView style="@style/SettingsHelp" android:text="Token" />
+            <EditText android:id="@+id/edge_token" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textVisiblePassword" android:singleLine="true" android:hint="Token" android:textSize="14sp" />
+            <TextView style="@style/SettingsHelp" android:text="常用音色" />
+            <Button android:id="@+id/edge_voice_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="选择音色（可搜索）" />
+            <EditText android:id="@+id/edge_voice" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textVisiblePassword" android:singleLine="true" android:hint="音色名称，可自定义" android:textSize="14sp" />
+            <Button android:id="@+id/save_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="保存语音配置" />
+            <Button android:id="@+id/system_tts_settings" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="系统文字转语音设置" />
+        </LinearLayout>
+        <LinearLayout style="@style/SettingsGroup">
+            <TextView style="@style/SettingsGroupTitle" android:text="X 兼容" />
+            <Switch android:id="@+id/x_compatibility" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="X 兼容模式" android:textSize="18sp" />
+            <TextView android:id="@+id/compatibility_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp" />
+            <TextView style="@style/SettingsHelp" android:text="进入 X 时启用兼容处理，离开后自动撤销。此开关会保存。" />
+        </LinearLayout>
+        <LinearLayout style="@style/SettingsGroup">
+            <TextView style="@style/SettingsGroupTitle" android:text="模拟播放测试" />
+            <Switch android:id="@+id/simulated_playback" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="模拟播放（滚动测试）" android:textSize="18sp" />
+            <TextView style="@style/SettingsHelp" android:text="不发声、不调用语音接口，每条正文按设定时间推进，仍会真实滚动页面。开启自动续读后测试连续滚动；修改模式或时间会停止当前播放。" />
+            <TextView android:id="@+id/simulation_delay_label" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <SeekBar android:id="@+id/simulation_delay" android:layout_width="match_parent" android:layout_height="48dp" android:max="49" android:contentDescription="模拟播放每条等待时间，100至5000毫秒" />
+        </LinearLayout>
+        <LinearLayout style="@style/SettingsGroup">
+            <TextView style="@style/SettingsGroupTitle" android:text="诊断" />
+            <Button android:id="@+id/test_edge" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="测试 Edge 连接（合成示例）" />
+            <Button android:id="@+id/preview_voice" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="试听当前引擎" />
+            <TextView android:id="@+id/edge_test_status" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <Button android:id="@+id/open_snapshots" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="快照与诊断" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="滚动采样（节点含当前页面文字，仅本机保存）" android:textSize="16sp" />
+            <TextView android:id="@+id/sample_status" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <Button android:id="@+id/sample_x" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="开始 X 采样" />
+            <Button android:id="@+id/sample_reddit" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="开始 Reddit 采样" />
+            <Button android:id="@+id/sample_stop" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="结束采样" />
+            <Button android:id="@+id/sample_export" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="导出最近采样" />
+            <TextView style="@style/SettingsHelp" android:text="先开启模拟播放和自动续读，再开始对应应用采样；每批最多400帧/24MB，保留最近3批。采样不改变滚动算法；纯滚屏不采文本，请使用朗读模式的模拟播放。" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
