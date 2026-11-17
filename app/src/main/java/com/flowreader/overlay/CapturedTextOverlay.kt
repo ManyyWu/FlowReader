@@ -59,8 +59,9 @@ class CapturedTextOverlay(private val service: AccessibilityService,
         injectedScrollStart = android.os.SystemClock.uptimeMillis()
         injectedScrollEnd = injectedScrollStart + durationMs
     }
-    private var ballX = dp(12)
-    private var ballY = dp(100)
+    private val savedBallPosition = settings.overlayPosition()
+    private var ballX = savedBallPosition?.first ?: dp(12)
+    private var ballY = savedBallPosition?.second ?: dp(100)
     private var docked = false
     private var scrollMode = settings.overlayScrollMode
     private var textToggle: Button? = null
@@ -713,7 +714,11 @@ class CapturedTextOverlay(private val service: AccessibilityService,
                     true
                 }
                 MotionEvent.ACTION_UP -> {
-                    if (moved) { if (nearScreenEdge()) snapBall(); scheduleDock() }
+                    if (moved) {
+                        if (nearScreenEdge()) snapBall()
+                        settings.saveOverlayPosition(ballX, ballY)
+                        scheduleDock()
+                    }
                     else if (pendingBallTap != null) {
                         pendingBallTap?.let(handler::removeCallbacks); pendingBallTap = null
                         setMenuOpen(false); toggleCurrentMode(); scheduleDock()
@@ -725,6 +730,7 @@ class CapturedTextOverlay(private val service: AccessibilityService,
                     true
                 }
                 MotionEvent.ACTION_CANCEL -> {
+                    if (moved) settings.saveOverlayPosition(ballX, ballY)
                     pendingBallTap?.let(handler::removeCallbacks); pendingBallTap = null; true
                 }
                 else -> false
@@ -755,6 +761,7 @@ class CapturedTextOverlay(private val service: AccessibilityService,
     private fun snapBall() {
         val width = service.resources.displayMetrics.widthPixels
         ballX = if (ballX + dp(20) < width / 2) 0 else width - dp(40)
+        settings.saveOverlayPosition(ballX, ballY)
         layoutController()
     }
 

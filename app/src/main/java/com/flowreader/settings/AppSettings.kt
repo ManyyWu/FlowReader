@@ -26,6 +26,14 @@ class AppSettings(context: Context) {
             return (((stored + 2) / 5) * 5).coerceIn(15, 300)
         }
         set(value) { preferences.edit().putInt("scroll_speed_percent_per_second", value.coerceIn(1, 300)).apply() }
+    fun overlayPosition(): Pair<Int, Int>? {
+        if (!preferences.contains("overlay_position_x") || !preferences.contains("overlay_position_y")) return null
+        return preferences.getInt("overlay_position_x", 0) to preferences.getInt("overlay_position_y", 0)
+    }
+    fun saveOverlayPosition(x: Int, y: Int) {
+        if (overlayPosition() == (x to y)) return
+        preferences.edit().putInt("overlay_position_x", x).putInt("overlay_position_y", y).apply()
+    }
     var overlayTransparency: Int
         get() = preferences.getInt("overlay_transparency", 0).coerceIn(0, 100)
         set(value) { preferences.edit().putInt("overlay_transparency", value.coerceIn(0, 100)).apply() }
